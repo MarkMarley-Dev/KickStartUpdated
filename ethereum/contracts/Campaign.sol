@@ -50,11 +50,11 @@ contract Campaign {
  
     function createRequest(string memory description, uint value, address recipient) public restricted {
         Request storage newRequest = requests.push(); 
-        newRequest.description = description;
-        newRequest.value= value;
-        newRequest.recipient= recipient;
-        newRequest.complete= false;
-        newRequest.approvalCount= 0;
+          newRequest.description = description;
+          newRequest.value= value;
+          newRequest.recipient= recipient;
+          newRequest.complete= false;
+          newRequest.approvalCount= 0;
     }
  
     function approveRequest(uint index) public {
